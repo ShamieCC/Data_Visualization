@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Case study 2: Data visualisation</title>
+    <meta name="description" content="Data visualization final Project Programming 2">
+
+    <!-- Libraries -->
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Main sketch file -->
+    <script src="sketch.js"></script>
+
+    <!-- Main visualisation files -->
+    <script src="tech-diversity-race.js"></script>
+    <script src="tech-diversity-gender.js"></script>
+    <script src="missing-persons.js"></script>
+    <script src="climate-change.js"></script>
+
+
+    <!-- Add extra scripts below -->
+    <script src="helper-functions.js"></script>
+    <script src="gallery.js"></script>
+    <script src="pie-chart.js"></script>
+  </head>
+  <body>
+
+    
+
+    <!-- The menu div just contains the button to toggle the menu -->
+		<div id="menu">
+			<button id="menu_button" class="selected">
+        <strong>
+        Menu
+        </strong></button>
+		</div>
+
+    <!-- a sidebar contains the menu to choose visualizations, it transitions from offscreen when open -->
+  
+	<div id="sidebar" class="open">
+		
+			<ul id="visuals-menu"></ul>
+			<button id="close_sidebar">
+        <strong>
+          Close
+        </strong>
+        </button>
+	</div>
+  
+    <div id="app" class="container">
+      <ul id="visuals-menu"></ul>
+    </div>
+
+		<!--finally load the navigation script which depends on the DOM being loaded so must load last-->
+		<script src="navigation.js"></script>
+	
+
+  </body>
+</html>

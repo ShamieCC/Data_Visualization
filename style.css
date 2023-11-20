@@ -1,0 +1,127 @@
+body{
+    font-family: sans-serif;
+    background: #8C5948;
+	font-weight: bold;
+	font-weight: 30px;
+}
+
+.selected{
+    background: rgba(128, 128, 128, 0.527);
+}
+
+/*button styling is taken from https://codepen.io/flik185/pen/XpPEmq, but simplified to minimize JS overhead*/
+button {
+	border-radius: 6px;
+	letter-spacing: 1px;
+	width: 100px;
+	height: 50px;
+	transition-duration: 0.2s;
+}
+
+button:hover,
+li.menu-item.hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+				0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	transition-duration: 0.2s;
+}
+
+#close_sidebar {
+	height: 30px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.menu-item {
+	letter-spacing: 2px;
+	width: 96%;
+	height: 70px;
+	line-height: 45px;
+	border-radius: px;
+	list-style-type: none;
+	padding: 5px;
+	margin-bottom: 20px;
+	transition-duration: 0.2s;
+}
+
+select {
+	border: none;
+	border-radius: 4px;
+	letter-spacing: 2px;
+	height: 20px;
+	transition-duration: 0.2s;
+	margin-left: 5px;
+	margin-right: 20px;
+	opacity: 90%;
+}
+
+.container {
+	display: flex;
+	overflow-x: hidden;
+}
+
+ul {
+/*    padding-inline-start: 10px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#visuals-menu {
+	margin-top: 10vh;
+}
+
+#menu_button {
+	position: absolute;
+	left: 2%;
+	top: 3%;
+}
+
+/*sidebar*/
+#sidebar {
+	text-align: center;
+	transform: translateX(-120%);
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: transform 1s;
+	z-index: 9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 20vw;
+	background-color: var(--global-color-secondary);
+}
+
+#sidebar.open {
+	transform: translateX(0);
+	transition: transform 1s;
+	border: 1px solid var(--global-color-tertiary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
